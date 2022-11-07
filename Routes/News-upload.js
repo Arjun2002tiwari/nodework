@@ -55,7 +55,7 @@ router.get("/",(req,res)=>{
             if(err) throw err;
             var i=0;
             for(i=0;i<result.length;i++){
-                result[i].image=`http://localhost:8000/api/news/${result[i].image}`;
+                result[i].image=`https://enews-api.herokuapp.com/api/news/${result[i].image}`;
                 console.log(result[i]);
             }
             res.send(result);
@@ -66,7 +66,7 @@ router.get("/",(req,res)=>{
             if(err) throw err;
             var i=0;
             for(i=0;i<result.length;i++){
-                result[i].image=`http://localhost:8000/api/news/${result[i].image}`;
+                result[i].image=`https://enews-api.herokuapp.com/api/news/${result[i].image}`;
                 console.log(result[i]);
             }
             res.send(result);

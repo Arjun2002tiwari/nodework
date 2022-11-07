@@ -24,7 +24,7 @@ router.get("/",(req,res)=>{
         Object.keys(result).forEach(function(key) {
              row = result[key];
           });
-        res.send(`http://localhost:8000/api/profile/${row.images}`);
+        res.send(`https://enews-api.herokuapp.com/api/profile/${row.images}`);
     })
 })
  
