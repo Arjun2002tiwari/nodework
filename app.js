@@ -18,7 +18,7 @@ app.listen(port,()=>{
 });
 
 app.get('/',(req,res)=>{
-    res.send("hello world!");
+    res.send("hello world! enews!");
 })
 
 app.use('/api/upload-profile',require('./Routes/user-profile'));
