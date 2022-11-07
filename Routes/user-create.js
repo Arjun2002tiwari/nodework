@@ -6,7 +6,7 @@ const app=require('../app');
 
 
 var con=db.con;
-var port=app.port;
+//var port=app.port;
 
 
 router.post("/",(req,res)=>{
@@ -27,7 +27,7 @@ router.get("/",(req,res)=>{
         Object.keys(result).forEach(function(key) {
              row = result[key];
           });
-        res.send(`${port}api/profile/${row.images}`);
+        res.send(`${app.port}api/profile/${row.images}`);
     })
 })
 
