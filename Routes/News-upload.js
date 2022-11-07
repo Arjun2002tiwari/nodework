@@ -13,7 +13,7 @@ const storage=multer.diskStorage({
 })
 
 var con=db.con;
-var port=app.port.toString();
+
 
 const upload=multer({
     storage:storage,
