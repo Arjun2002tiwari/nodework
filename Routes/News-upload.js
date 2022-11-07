@@ -44,7 +44,7 @@ router.get("/",(req,res)=>{
             var i=0;
             console.log(result.length);
             for(i=0;i<result.length;i++){
-                result[i].image=`${app.port}api/news/${result[i].image}`;
+                result[i].image=`https://enews-api.herokuapp.com/api/news/${result[i].image}`;
                 console.log(result[i]);
             }
             res.send(result);
