@@ -23,11 +23,7 @@ router.post("/",(req,res)=>{
 router.get("/",(req,res)=>{
     con.query("SELECT * FROM USER",(err,result)=>{
         if(err) throw err;
-        var row;
-        Object.keys(result).forEach(function(key) {
-             row = result[key];
-          });
-        res.send(`https://enews-api.herokuapp.com/api/profile/${row.images}`);
+        res.send(result);
     })
 })
 
