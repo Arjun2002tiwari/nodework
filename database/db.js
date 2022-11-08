@@ -5,6 +5,10 @@ var con = mysql.createConnection({
   user: "sql12541828",
   password: "8VLmAz7X7b",
   database: "sql12541828"
+  // host:"localhost",
+  // user:"root",
+  // password:"123456",
+  // database:"eptrakaar"
 });
 
 

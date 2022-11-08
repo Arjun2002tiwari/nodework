@@ -10,7 +10,7 @@ var con=db.con;
 
 
 router.post("/",(req,res)=>{
-    let data={name:req.body.name,username:req.body.username,collections:'{"collect":[]}'};
+    let data={name:req.body.name,username:req.body.username};
 
     let sql="INSERT INTO USER SET ?";
 
