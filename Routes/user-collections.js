@@ -18,14 +18,17 @@ router.post("/",(req,res)=>{
 });
 
 router.get("/",(req,res)=>{
-    con.query("SELECT * FROM USER",(err,result)=>{
+    if(req.query.username!=undefined)
+    con.query(`SELECT collections FROM USER WHERE username="${req.query.username}"`,(err,result)=>{
         if(err) throw err;
-        var row;
-        Object.keys(result).forEach(function(key) {
-             row = result[key];
-          });
-        res.send(`https://enews-api.herokuapp.com/api/profile/${row.images}`);
+        res.send(result);
     })
+    else{
+        con.query(`SELECT collections FROM USER`,(err,result)=>{
+            if(err) throw err;
+            res.send(result);
+        })
+    }
 })
  
 
