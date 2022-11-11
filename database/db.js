@@ -1,10 +1,10 @@
 var mysql=require('mysql');
 
 var con = mysql.createConnection({
-  host: "sql12.freesqldatabase.com",
-  user: "sql12541828",
-  password: "8VLmAz7X7b",
-  database: "sql12541828"
+  host: "remotemysql.com",
+  user: "udyqLKxWAd",
+  password: "ykuYINn0Ra",
+  database: "udyqLKxWAd"
   // host:"localhost",
   // user:"root",
   // password:"123456",
