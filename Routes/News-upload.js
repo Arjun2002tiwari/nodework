@@ -29,7 +29,15 @@ router.post("/",upload.single('news'),(req,res)=>{
     // })
     idNumber=idNumber+1;
     var d = new Date();
-    let data={id:idNumber,discription:req.body.discription,article:req.body.article,image:req.file.filename,category:req.body.category,source:req.body.source,time:d};
+    let data={
+        id:idNumber,
+        discription:req.body.discription,
+        article:req.body.article,
+        image:req.file.filename,
+        category:req.body.category,
+        source:req.body.source,
+        time:d
+    };
     let sql="INSERT INTO NEWS SET ?";
 
     con.query(sql,data,(err,result)=>{
