@@ -30,7 +30,7 @@ router.get("/",(req,res)=>{
         con.query(`SELECT * FROM COLLECTIONS`,(err,result)=>{
             if(err) throw err;
             res.send(result);
-        })
+        }) 
     }
 })
  
