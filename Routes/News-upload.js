@@ -19,7 +19,7 @@ const upload=multer({
     storage:storage,
 })
 
-var idNumber=3;
+var idNumber=0; 
 router.post("/",upload.single('news'),(req,res)=>{
 
     
