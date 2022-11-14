@@ -42,7 +42,7 @@ router.post("/",upload.single('news'),(req,res)=>{
 
     con.query(sql,data,(err,result)=>{
         if(err) throw err;
-        res.send(JSON.stringify({status:200,error:null,response:"news added into database!",id:idNumber}));
+        res.json({status:200,error:null,response:"news added into database!",id:idNumber});
     });
 })
 router.get("/",(req,res)=>{
@@ -55,7 +55,7 @@ router.get("/",(req,res)=>{
                 result[i].image=`https://enews-api.herokuapp.com/api/news/${result[i].image}`;
                 console.log(result[i]);
             }
-            res.send(result);
+            res.send(JSON.stringify(result));
         });
     }
     else if(req.query.id!=undefined && req.query.category==undefined){

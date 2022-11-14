@@ -3,6 +3,7 @@ var mysql=require('mysql');
 var con = mysql.createConnection({
   host: "epatrakaar.cbd9pnrwasw2.ap-northeast-1.rds.amazonaws.com",
   user: "admin",
+  port:3306,
   password: "epatrakaar1234",
   database: "epatrakaar",
   // host:"localhost",
