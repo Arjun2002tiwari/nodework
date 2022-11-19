@@ -6,10 +6,11 @@ var con = mysql.createConnection({
   port:3306,
   password: "epatrakaar1234",
   database: "epatrakaar",
-  // host:"localhost",
-  // user:"root",
-  // password:"123456",
-  // database:"eptrakaar"
+  //host:"localhost",
+  //user:"root",
+  //port:3007,
+  //password:"root",
+  //database:"epatr"
 });
 
 
