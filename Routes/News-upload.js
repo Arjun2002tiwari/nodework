@@ -36,7 +36,12 @@ router.post("/",upload.single('news'),(req,res)=>{
         image:req.file.filename,
         category:req.body.category,
         source:req.body.source,
-        time:d
+        time:d,
+        K1:req.body.K1,
+        K2:req.body.K2,
+        K3:req.body.K3,
+        K4:req.body.K4,
+        K5:req.body.K5
     };
     let sql="INSERT INTO NEWS SET ?";
 
