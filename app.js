@@ -24,11 +24,11 @@ app.get('/',(req,res)=>{
 app.use('/api/upload-profile',require('./Routes/user-profile'));
 app.use('/api/create',require('./Routes/user-create'));
 app.use('/api/upload-collections',require('./Routes/user-collections'));
-app.use('/api/keywords',require('./Routes/Keyword'));
 app.use('/api/profile',express.static('./upload/images'));
 
 app.use('/api/news',express.static('./NewsImages/images'));
 app.use('/api/news-route',require('./Routes/News-upload'));
+app.use('/api/keywords',require('./Routes/Keyword'));
 
 
 module.exports={port};
