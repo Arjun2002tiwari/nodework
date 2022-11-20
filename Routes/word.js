@@ -12,7 +12,6 @@ router.post("/",(req,res)=>{
         k4:req.body.k4,
         k5:req.body.k5
     };
-    
 
     let sql="INSERT INTO KEYWORD SET ?";
    
