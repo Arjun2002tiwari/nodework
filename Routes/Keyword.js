@@ -1,7 +1,7 @@
 const express=require('express');
 const router=express.Router();
 const db=require('../database/db');
-const key=require('../Routes/News-upload');
+
 
 
 router.post("/",(req,res)=>{
@@ -21,7 +21,7 @@ router.post("/",(req,res)=>{
         if(err) throw err;
         res.send(JSON.stringify({status:200,error:null,response:"Keywords added!"}));
     }); 
-});
+})
  
 
 module.exports=router
