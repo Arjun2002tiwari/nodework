@@ -28,8 +28,6 @@ app.use('/api/profile',express.static('./upload/images'));
 
 app.use('/api/news',express.static('./NewsImages/images'));
 app.use('/api/news-route',require('./Routes/News-upload'));
-app.use('/api/keywords',require('./Routes/keyword'));
-
 
 module.exports={port};
 
