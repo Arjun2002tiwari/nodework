@@ -17,7 +17,7 @@ router.post("/",(req,res)=>{
    
     con.query(sql,data,(err,result)=>{
         if(err) throw err;
-        res.send(JSON.stringify({status:200,error:null,response:"Collections added!"}));
+        res.send(JSON.stringify({status:200,error:null,response:"Keywords added!"}));
     }); 
 });
 
