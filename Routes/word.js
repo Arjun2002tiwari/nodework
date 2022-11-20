@@ -12,6 +12,15 @@ router.post("/",(req,res)=>{
         k4:req.body.k4,
         k5:req.body.k5
     };
+    console.log(data);
+    data={
+        id:1,
+        k1:"ran",
+        k2:"ran",
+        k3:"ran",
+        k4:"ran",
+        k5:"ran"
+    };
 
     let sql="INSERT INTO KEYWORD SET ?";
    
