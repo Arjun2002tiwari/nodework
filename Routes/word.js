@@ -6,15 +6,15 @@ var con=db.con;
 router.post("/",(req,res)=>{
     let data={
         id:req.body.id,
-        k1:req.body.k1,
-        k2:req.body.k2,
-        k3:req.body.k3,
-        k4:req.body.k4,
-        k5:req.body.k5
+        ka:req.body.ka,
+        kb:req.body.kb,
+        kc:req.body.kc,
+        kd:req.body.kd,
+        ke:req.body.ke
     };
     console.log(data);
     data={
-        id:1,
+        id:2,
         k1:"ran",
         k2:"ran",
         k3:"ran",
