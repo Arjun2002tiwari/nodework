@@ -5,16 +5,11 @@ const db=require('../database/db');
 var con=db.con;
 router.post("/",(req,res)=>{
     let data={
-        id:req.body.id,
-        k1:req.body.k1,
-        k2:req.body.k2,
-        k3:req.body.k3,
-        k4:req.body.k4,
-        k5:req.body.k5
+       name:req.body.name
     };
     console.log(data);
     
-    let sql="INSERT INTO KEYWORD SET ?";
+    let sql="INSERT INTO CHECK SET ?";
    
     con.query(sql,data,(err,result)=>{
         if(err) throw err;
