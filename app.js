@@ -8,6 +8,7 @@ const multer=require("multer");
 const path=require("path");
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 
 db.mysqlConnect();
