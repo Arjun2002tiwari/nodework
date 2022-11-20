@@ -4,9 +4,7 @@ const db=require('../database/db');
 
 var con=db.con;
 router.post("/",(req,res)=>{
-    let data={
-       name:req.body.name
-    };
+    let data={name:req.body.name};
     console.log(data);
     
     let sql="INSERT INTO CHECK SET ?";
