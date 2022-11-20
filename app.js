@@ -4,11 +4,14 @@ const bodyParser=require("body-parser");
 const app=express();
 const port=process.env.PORT || 8000;
 
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
+
 const multer=require("multer");
 const path=require("path");
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
+
+
 
 
 db.mysqlConnect();

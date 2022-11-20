@@ -1,6 +1,10 @@
 const express=require('express');
 const router=express.Router();
 const db=require('../database/db');
+var app=express();
+
+app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 var con=db.con;
 router.post("/",(req,res)=>{
