@@ -1,7 +1,8 @@
 const express=require('express');
-const router=express.Router();
 const db=require('../database/db');
 var app=express();
+const bodyParser=require("body-parser");
+const router=express.Router();
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
