@@ -4,7 +4,7 @@ const db=require('../database/db');
 
 
 
-
+var con=db.con;
 
 router.post("/",(req,res)=>{
     let data={username:req.body.username,id:req.body.id};

@@ -2,6 +2,7 @@ const express=require('express');
 const router=express.Router();
 const db=require('../database/db');
 
+var con=db.con;
 router.post("/",(req,res)=>{
     let data={
         id:req.body.id,
