@@ -6,11 +6,11 @@ var con=db.con;
 router.post("/",(req,res)=>{
     let data={
         id:req.body.id,
-        ka:req.body.ka,
-        kb:req.body.kb,
-        kc:req.body.kc,
-        kd:req.body.kd,
-        ke:req.body.ke
+        k1:req.body.ka,
+        k2:req.body.kb,
+        k3:req.body.kc,
+        k4:req.body.kd,
+        k5:req.body.ke
     };
     console.log(data);
     data={
