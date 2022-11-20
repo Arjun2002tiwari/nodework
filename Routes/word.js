@@ -10,8 +10,7 @@ router.post("/",(req,res)=>{
         k2:req.body.k2,
         k3:req.body.k3,
         k4:req.body.k4,
-        k5:req.body.k5,
-
+        k5:req.body.k5
     };
     console.log(data);
     
